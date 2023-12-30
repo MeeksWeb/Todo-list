@@ -67,7 +67,6 @@ ul {
     justify-content: space-between;
     width: 320px;
     overflow-y: auto;
-    overflow-x: hidden;
     height: 80px;
     border: 1px solid black;
     align-items: center;
