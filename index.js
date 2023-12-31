@@ -4,7 +4,25 @@ const list = document.querySelector('.list');
 const time = document.getElementById('time');
 const clear = document.getElementById('clear');
 const check = document.getElementById('check');
+const greeting = document.querySelector('.greetings')
 
+
+const time1= new Date()
+const nowTime = time1.getHours()
+
+function welcome() {
+    if (nowTime < 12) {
+        greeting.innerText = 'Good Morning!'
+    } else if (nowTime >= 12 && nowTime <= 16) {
+        greeting.innerText = 'Good Afternoon!'
+    } else if (nowTime > 16 && nowTime <= 24) {
+        greeting.innerText = 'Good Evening!'
+    } else {
+        greeting.innerText = 'Good Day!'
+    }
+}
+
+welcome()
 
 let valueTxt = ''
 let dateValue = ''
